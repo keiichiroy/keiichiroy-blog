@@ -1,14 +1,13 @@
 ---
 title: Docker for Windows上のKubernetesをインストール
 date: 2018-12-06T13:17:30.712Z
-description: 管理用Web UIにアクセスできるようになるまで
+description: まずはCI/CDできるところまで(というかGitLab入れるまで)
 image: /img/shipping_containers_at_clyde-1-.jpg
+---
+久々のKubernetes
 ---
 新しいノートPCになってから、久しぶりにDockerをインストール。以前のマシンはなぜかHyper-Vが立ち上がらずに、Docker自体が使えなくなってしまっていたのでした(VirtualBoxとの切り替えで何かが起きたかもしれないのだけれど追い切れず)
 
-とりあえず、Kubeconfigが必要とのことで場所を探す。\
-この記事からフツーに%USERPROFILE%配下にありそうだと分かったので探す。\
-<https://www.deploycontainers.com/2018/05/09/manage-kubernetes-docker-windows-101-guide/>
+**kube proxy** して管理用のWeb UIが見られる所までは確認。  
+あとはhelm入れてGitLabを入れればOKなはず。
 
-というより認証しなくても初期状態で画面見られるのね。
-<http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default>
