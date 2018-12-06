@@ -9,3 +9,6 @@ image: /img/shipping_containers_at_clyde-1-.jpg
 とりあえず、Kubeconfigが必要とのことで場所を探す。\
 この記事からフツーに%USERPROFILE%配下にありそうだと分かったので探す。\
 <https://www.deploycontainers.com/2018/05/09/manage-kubernetes-docker-windows-101-guide/>
+
+というより認証しなくても初期状態で画面見られるのね。
+<http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default>
