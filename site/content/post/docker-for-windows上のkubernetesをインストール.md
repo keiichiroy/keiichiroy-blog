@@ -14,8 +14,11 @@ image: /img/shipping_containers_at_clyde-1-.jpg
 
 Helmインストール
 ---
-Chocolateyにありました
+こちらを参照に。  
+- <https://qiita.com/nykym/items/1573ca568a80d0d01c45>
+- <https://docs.helm.sh/using_helm>
 
+コマンドはChocolateyからインストール
 ```
 choco install helm
 ```
